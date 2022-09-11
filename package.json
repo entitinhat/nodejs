@@ -2,10 +2,15 @@
   "name": "test",
   "version": "1.0.0",
   "description": "abc",
-  "main": "new.js",
+  "main": "src/new.js",
   "scripts": {
-    "start": "nodemon --inspect new.js",
+    "start": "nodemon --inspect src/new.js",
+    "watch": "node-sass --watch src/resources/scss/ --output src/public/css/", 
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "respitory": {
+    "type": "git",
+    "url": "git+https://github.com/entitinhat/nodejs.git"
   },
   "keywords": [
     "huu"
@@ -13,9 +18,12 @@
   "author": "nhat",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.18.1"
+    "express": "^4.18.1",
+    "express-handlebars": "^6.0.6"
   },
   "devDependencies": {
+    "morgan": "^1.10.0",
+    "node-sass": "^7.0.3",
     "nodemon": "^2.0.19"
   }
 }
