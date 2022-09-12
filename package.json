@@ -8,10 +8,6 @@
     "watch": "node-sass --watch src/resources/scss/ --output src/public/css/", 
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "respitory": {
-    "type": "git",
-    "url": "git+https://github.com/entitinhat/nodejs.git"
-  },
   "keywords": [
     "huu"
   ],
