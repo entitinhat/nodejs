@@ -1,0 +1,31 @@
+<form method="POST" action="/courses/store">
+  <div class="form-group">
+    <label for="name">Tên khóa học</label>
+    <input type="text" class="form-control" id="name" name="name">
+  </div>
+   <div class="form-group">
+    <label for="description">Mô tả khóa học</label>
+    <input type="text" class="form-control" id="description" name="description">
+  </div>
+  <div class="form-group">
+    <label for="description"> Id video </label>
+    <input type="text" class="form-control" id="videoID" name="videoID">
+  </div>
+  <div class="form-group">
+  <div class="form-group">
+    <label for="image"> URL Thumbnail </label>
+    <input type="text" class="form-control" id="image" name="image">
+  </div>
+  <div class="form-group">
+    <label for="slug"> Từ khóa cuối trang </label>
+    <input type="text" class="form-control" id="slug" name="slug">
+  </div>
+    <label for="level"> Trình độ </label>
+    <select name="level" id="level">
+        <option value="beginner">Cơ bản</option>
+        <option value="intermediate">Trung cấp</option>
+        <option value="advanced">Nâng cao</option>
+    </select>
+  </div>
+  <button type="submit" class="btn btn-primary">Thêm khóa học</button>
+</form>

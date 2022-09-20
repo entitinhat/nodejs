@@ -10,3 +10,20 @@ h1 {
         #ffcc70 100%
     );
 }
+
+.card-course-item {
+    margin-top: 16px
+}
+.user-avatar {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+
+}
+.edit-delete:hover {
+    color: red;
+}
+
+.table .col-header {
+    text-align: center;
+}

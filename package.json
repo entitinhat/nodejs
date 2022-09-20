@@ -4,9 +4,9 @@
   "description": "abc",
   "main": "src/new.js",
   "scripts": {
-    "beautiful": "lint-staged",
+    "beautiful": "prettier --single-quote --trailing-comma all --tab-width 4 --write \"src/**/*.{js,json,scss}\"",
     "start": "nodemon --inspect src/new.js",
-    "watch": "node-sass --watch src/resources/scss/ --output src/public/css/", 
+    "watch": "node-sass --watch src/resources/scss/ --output src/public/css/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -14,19 +14,17 @@
   ],
   "author": "nhat",
   "license": "ISC",
-  "lint-staged": {
-    "src/**/*.{js,json,scss}": "prettier --single-quote --trailing-comma all --tab-width 4 --write"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
   "dependencies": {
+    "bootstrap-icons": "^1.9.1",
     "express": "^4.18.1",
-    "express-handlebars": "^6.0.6"
+    "express-handlebars": "^6.0.6",
+    "method-override": "^3.0.0",
+    "mongoose": "^6.6.0",
+    "mongoose-delete": "^0.5.4",
+    "mongoose-slug-generator": "^1.0.4"
   },
   "devDependencies": {
+    "husky": "^4.2.5",
     "morgan": "^1.10.0",
     "node-sass": "^7.0.3",
     "nodemon": "^2.0.19"
